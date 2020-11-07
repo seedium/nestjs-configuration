@@ -17,7 +17,7 @@ coverage
 .nycrc.yaml
 .prettierignore
 .prettierrc.yaml
-release-it.yml
+.release-it.yml
 renovate.json
 tsconfig.json
 tsconfig.spec.json
