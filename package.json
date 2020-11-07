@@ -1,6 +1,6 @@
 {
   "name": "nestjs-configuration",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Config module for NestJS application",
   "main": "index.js",
   "directories": {
