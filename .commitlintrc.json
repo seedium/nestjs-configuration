@@ -9,12 +9,17 @@
     "type-enum": [
       2,
       "always",
-      [ "feat", "fix", "docs", "style", "refactor", "test", "chore", "ci" ]
-    ],
-    "scope-case": [
-      2,
-      "always",
-      "lower-case"
+      [
+        "chore",
+        "ci",
+        "docs",
+        "feat",
+        "fix",
+        "refactor",
+        "revert",
+        "style",
+        "test"
+      ]
     ]
   }
 }
