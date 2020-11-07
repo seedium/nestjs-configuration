@@ -42,10 +42,10 @@ jobs:
       - *restore-cache
       - *install-deps
       - run:
-          name: Run eslint
+          name: Run Eslint
           command: npm run lint && npm run lint:test
       - run:
-          name: Run prettier
+          name: Run Prettier
           command: npm run format -- --check
 
   tests:
@@ -57,7 +57,7 @@ jobs:
       - *restore-cache
       - *install-deps
       - run:
-          name: Integration tests
+          name: Run Tests
           command: npm run test
 
 workflows:
