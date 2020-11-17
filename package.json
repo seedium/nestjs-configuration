@@ -1,6 +1,6 @@
 {
   "name": "nestjs-configuration",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Config module for NestJS application",
   "scripts": {
     "clean": "rimraf -rf 'dist' 'tsconfig.tsbuildinfo'",
