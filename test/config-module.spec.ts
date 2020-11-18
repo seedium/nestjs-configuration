@@ -38,4 +38,12 @@ describe('ConfigModule', () => {
     expect(config).instanceOf(Config);
     expect(config).property('_loader').instanceOf(TestLoader);
   });
+  it('module by default should be scoped', async () => {
+    const dynamicModule = ConfigModule.forFoot({ path: 'test' });
+    expect(dynamicModule).property('global').is.false;
+  });
+  it('module can be set as a global', () => {
+    const dynamicModule = ConfigModule.forFoot({ path: 'test', global: true });
+    expect(dynamicModule).property('global').is.true;
+  });
 });

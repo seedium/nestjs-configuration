@@ -8,6 +8,7 @@ import { DotenvConfigLoader } from './loaders';
 export class ConfigModule {
   static forFoot({
     pattern = '!(*.d).{ts,js}',
+    global = false,
     ...options
   }: O.Optional<IConfigOptions, 'pattern'>): DynamicModule {
     const configProvider: FactoryProvider = {
@@ -26,12 +27,14 @@ export class ConfigModule {
       module: ConfigModule,
       exports: [configProvider],
       providers: [configProvider],
+      global,
     };
   }
   static forFeature(
     configLoader: IConfigLoader,
     {
       pattern = '!(*.d).{ts,js}',
+      global = false,
       ...options
     }: O.Optional<IConfigOptions, 'pattern'>,
   ): DynamicModule {
@@ -51,6 +54,7 @@ export class ConfigModule {
       module: ConfigModule,
       exports: [configProvider],
       providers: [configProvider],
+      global,
     };
   }
 }

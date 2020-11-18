@@ -7,4 +7,5 @@ export interface IConfigBootSpec {
 export interface IConfigOptions {
   path: string;
   pattern: string;
+  global?: boolean;
 }
