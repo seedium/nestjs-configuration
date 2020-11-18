@@ -7,7 +7,7 @@ import { DotenvConfigLoader } from './loaders';
 
 export class ConfigModule {
   static forFoot({
-    pattern = '*.ts',
+    pattern = '!(*.d).{ts,js}',
     ...options
   }: O.Optional<IConfigOptions, 'pattern'>): DynamicModule {
     const configProvider: FactoryProvider = {
@@ -30,7 +30,10 @@ export class ConfigModule {
   }
   static forFeature(
     configLoader: IConfigLoader,
-    { pattern = '*.ts', ...options }: O.Optional<IConfigOptions, 'pattern'>,
+    {
+      pattern = '!(*.d).{ts,js}',
+      ...options
+    }: O.Optional<IConfigOptions, 'pattern'>,
   ): DynamicModule {
     const configProvider: FactoryProvider = {
       provide: Config,
