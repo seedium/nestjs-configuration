@@ -1,5 +1,4 @@
 import * as glob from 'glob';
-import { promisify } from 'util';
 import { resolve as resolvePath } from 'path';
 import { OnApplicationShutdown } from '@nestjs/common';
 import * as prop from 'lodash.property';
@@ -13,8 +12,6 @@ import {
   IConfigBootSpec,
 } from './interfaces';
 
-const globAsync = promisify(glob);
-
 export class Config<T extends IStore = IStore>
   implements OnApplicationShutdown {
   private _stores: T = {} as T;
@@ -22,6 +19,7 @@ export class Config<T extends IStore = IStore>
   get store(): T {
     return this._stores;
   }
+
   constructor(
     private readonly _loader: IConfigLoader,
     private readonly _options: IConfigOptions,
@@ -45,7 +43,7 @@ export class Config<T extends IStore = IStore>
     modules.forEach((module) => (this._stores = merge(module, this._stores)));
   }
   protected async importConfigs(): Promise<Record<string, unknown>[]> {
-    const files = await globAsync(
+    const files = glob.sync(
       resolvePath(this._options.path, this._options.pattern),
     );
     const importFiles = this.normalizeWithNamespaces(this._options.path, files);
@@ -53,16 +51,20 @@ export class Config<T extends IStore = IStore>
     const configs = await Promise.all(
       Object.entries(importFiles).map(async ([namespace, configPath]) => {
         const module = await import(configPath);
-        const config = module.default;
+        const maybeStaticConfigOrFactoryFunction = module.default;
 
-        if (isFunction(config)) {
+        if (isFunction(maybeStaticConfigOrFactoryFunction)) {
           return {
-            [namespace]: config(this._loader),
+            [namespace]: await maybeStaticConfigOrFactoryFunction(this._loader),
           };
-        } else if (isPlainObject(config)) {
+        } else if (isPlainObject(maybeStaticConfigOrFactoryFunction)) {
           return {
-            [namespace]: config,
+            [namespace]: maybeStaticConfigOrFactoryFunction,
           };
+        } else {
+          console.warn(
+            `Unsupported config type "${typeof maybeStaticConfigOrFactoryFunction}". Currently supported only static object or sync and async function returning object`,
+          );
         }
       }),
     );

@@ -49,6 +49,13 @@ describe('Config', async () => {
         .property('object_config')
         .deep.eq(configObject);
     });
+    it('should load config from async function', () => {
+      expect(config)
+        .property('_stores')
+        .property('async_test')
+        .property('foo')
+        .eq('bar');
+    });
     it('should miss other type of export default', () => {
       expect(config).property('_stores').not.property('class_config');
     });
@@ -74,20 +81,12 @@ describe('Config', async () => {
       .property('test_custom.config');
     expect(customConfigPattern).property('_stores').not.property('test');
   });
-  it('error in glob should be rejected', async () => {
-    const testErrorGlob = new Error('test error glob');
-    const stubGlob = sinon.stub().callsFake((path, cb) => cb(testErrorGlob));
-    const { Config: ConfigProvider } = proxyquire('../lib/config.provider', {
-      glob: stubGlob,
-    });
-    const options = { path: path.join(__dirname, 'configs'), pattern: '*.ts' };
-    const configProvider = new ConfigProvider(new TestLoader(), options);
-    await expect(configProvider.load()).eventually.rejectedWith(testErrorGlob);
-  });
   it('if files are wrong should skip normalizing', async () => {
-    const stubGlob = sinon.stub().callsFake((path, cb) => cb(null, ['test']));
+    const stubSyncGlob = sinon.stub().callsFake(() => ['test']);
     const { Config: ConfigProvider } = proxyquire('../lib/config.provider', {
-      glob: stubGlob,
+      glob: {
+        sync: stubSyncGlob,
+      },
     });
     const options = { path: path.join(__dirname, 'configs'), pattern: '*.ts' };
     const testConfig = new ConfigProvider(new TestLoader(), options);
