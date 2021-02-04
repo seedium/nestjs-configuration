@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/seedium/nestjs-configuration/compare/1.2.0...1.3.0) (2021-02-04)
+
+
+### Features
+
+* add support for async export config ([3d79721](https://github.com/seedium/nestjs-configuration/commit/3d79721d44589601170e3a9e5c84843c80f0f6a4))
+
 # [1.2.0](https://github.com/seedium/nestjs-configuration/compare/1.1.0...1.2.0) (2020-11-19)
 
 
