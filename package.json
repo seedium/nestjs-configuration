@@ -79,6 +79,6 @@
     "lodash.isplainobject": "4.0.6",
     "lodash.merge": "4.6.2",
     "lodash.property": "4.4.2",
-    "ts-toolbelt": "8.0.7"
+    "ts-toolbelt": "9.3.12"
   }
 }
