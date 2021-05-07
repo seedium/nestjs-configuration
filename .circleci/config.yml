@@ -17,7 +17,7 @@ jobs:
   build:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:15
     steps:
       - checkout
       - run:
@@ -36,7 +36,7 @@ jobs:
   lint:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:15
     steps:
       - checkout
       - *restore-cache
@@ -51,7 +51,7 @@ jobs:
   tests:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:15
     steps:
       - checkout
       - *restore-cache
