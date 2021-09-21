@@ -17,7 +17,7 @@ jobs:
   build:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
       - run:
@@ -36,7 +36,7 @@ jobs:
   lint:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
       - *restore-cache
@@ -46,12 +46,12 @@ jobs:
           command: npm run lint && npm run lint:test
       - run:
           name: Run Prettier
-          command: npm run format -- --check
+          command: ./node_modules/.bin/prettier '{lib,test}/**/*.ts' '{lib,test}/*.ts' --check
 
   tests:
     working_directory: ~/nestjs-configuration
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
       - *restore-cache

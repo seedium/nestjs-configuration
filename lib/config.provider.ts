@@ -13,7 +13,8 @@ import {
 } from './interfaces';
 
 export class Config<T extends IStore = IStore>
-  implements OnApplicationShutdown {
+  implements OnApplicationShutdown
+{
   private _stores: T = {} as T;
 
   get store(): T {
