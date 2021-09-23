@@ -1,4 +1,4 @@
 export interface IConfigLoader {
   init(): Promise<void> | void;
-  get<T>(key: string, defaultValue?: T): T;
+  get<T>(_key: string, _defaultValue?: T): T;
 }
