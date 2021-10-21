@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@release-it/conventional-changelog", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:3.3.0"],
             ["@types/chai", "npm:4.2.22"],
             ["@types/chai-as-promised", "npm:7.1.4"],
-            ["@types/glob", "npm:7.1.4"],
+            ["@types/glob", "npm:7.2.0"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.27"],
             ["@types/sinon", "npm:10.0.4"],
@@ -1290,10 +1290,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/glob", [
-        ["npm:7.1.4", {
-          "packageLocation": "./.yarn/cache/@types-glob-npm-7.1.4-d45247eaa2-6911a95644.zip/node_modules/@types/glob/",
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/@types-glob-npm-7.2.0-772334bf9a-6ae717fedf.zip/node_modules/@types/glob/",
           "packageDependencies": [
-            ["@types/glob", "npm:7.1.4"],
+            ["@types/glob", "npm:7.2.0"],
             ["@types/minimatch", "npm:3.0.5"],
             ["@types/node", "npm:16.9.6"]
           ],
@@ -5770,7 +5770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@release-it/conventional-changelog", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:3.3.0"],
             ["@types/chai", "npm:4.2.22"],
             ["@types/chai-as-promised", "npm:7.1.4"],
-            ["@types/glob", "npm:7.1.4"],
+            ["@types/glob", "npm:7.2.0"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.27"],
             ["@types/sinon", "npm:10.0.4"],
