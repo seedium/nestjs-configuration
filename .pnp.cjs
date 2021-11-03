@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.11.6"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
-            ["sinon", "npm:11.1.2"],
+            ["sinon", "npm:12.0.0"],
             ["sinon-chai", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["ts-node", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:10.4.0"],
@@ -1168,6 +1168,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-7.1.2-2a6b119ac7-c84773d797.zip/node_modules/@sinonjs/fake-timers/",
           "packageDependencies": [
             ["@sinonjs/fake-timers", "npm:7.1.2"],
+            ["@sinonjs/commons", "npm:1.8.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-8.1.0-95c51c96db-09b5a158ce.zip/node_modules/@sinonjs/fake-timers/",
+          "packageDependencies": [
+            ["@sinonjs/fake-timers", "npm:8.1.0"],
             ["@sinonjs/commons", "npm:1.8.3"]
           ],
           "linkType": "HARD",
@@ -5797,7 +5805,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.11.6"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
-            ["sinon", "npm:11.1.2"],
+            ["sinon", "npm:12.0.0"],
             ["sinon-chai", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["ts-node", "virtual:fac06ce0b69ff64a18b41a38e10a4461d11206d159a430de87865fbc540c635787fcd435fe2c1f9ad5ce01d9f423bac608fd16b21d33138fc1dea068c5cac646#npm:10.4.0"],
@@ -7181,12 +7189,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sinon", [
-        ["npm:11.1.2", {
-          "packageLocation": "./.yarn/cache/sinon-npm-11.1.2-5325724cb2-1d01377e23.zip/node_modules/sinon/",
+        ["npm:12.0.0", {
+          "packageLocation": "./.yarn/cache/sinon-npm-12.0.0-0b2e3ebdc0-90035a4cb8.zip/node_modules/sinon/",
           "packageDependencies": [
-            ["sinon", "npm:11.1.2"],
+            ["sinon", "npm:12.0.0"],
             ["@sinonjs/commons", "npm:1.8.3"],
-            ["@sinonjs/fake-timers", "npm:7.1.2"],
+            ["@sinonjs/fake-timers", "npm:8.1.0"],
             ["@sinonjs/samsam", "npm:6.0.2"],
             ["diff", "npm:5.0.0"],
             ["nise", "npm:5.1.0"],
@@ -7210,7 +7218,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.22"],
             ["@types/sinon", "npm:10.0.6"],
             ["chai", "npm:4.3.4"],
-            ["sinon", "npm:11.1.2"]
+            ["sinon", "npm:12.0.0"]
           ],
           "packagePeers": [
             "@types/chai",
