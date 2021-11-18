@@ -28,7 +28,7 @@ export class Config<T extends IStore = IStore>
   public onApplicationShutdown(): void {
     this._stores = {} as T;
   }
-  public get<T extends unknown>(path: string, defaultValue?: T): T {
+  public get<T>(path: string, defaultValue?: T): T {
     const value = prop(path)(this._stores);
     if (value === undefined) {
       return defaultValue as T;
