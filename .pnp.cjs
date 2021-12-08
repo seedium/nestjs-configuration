@@ -65,7 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.property", "npm:4.4.2"],
             ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
-            ["prettier", "npm:2.4.1"],
+            ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.11.8"],
@@ -5856,7 +5856,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.property", "npm:4.4.2"],
             ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
-            ["prettier", "npm:2.4.1"],
+            ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.11.8"],
@@ -6529,10 +6529,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.4.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.4.1-623aac91ee-cc6830588b.zip/node_modules/prettier/",
+        ["npm:2.5.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.5.1-58b195b509-21b9408476.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.4.1"]
+            ["prettier", "npm:2.5.1"]
           ],
           "linkType": "HARD",
         }]
