@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["release-it", "npm:14.11.8"],
+            ["release-it", "npm:14.12.4"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["sinon", "npm:12.0.1"],
@@ -1127,7 +1127,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["conventional-changelog", "npm:3.1.24"],
             ["conventional-recommended-bump", "npm:6.1.0"],
             ["prepend-file", "npm:2.0.0"],
-            ["release-it", "npm:14.11.8"]
+            ["release-it", "npm:14.12.4"]
           ],
           "packagePeers": [
             "@types/release-it",
@@ -2930,6 +2930,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:4.3.3", {
+          "packageLocation": "./.yarn/cache/debug-npm-4.3.3-710fd4cc7f-14472d56fe.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "npm:4.3.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:381f955dfa69a9cf22f11da2f0adee704da8cfecfc37029793b9662f9ab1df7f010b776b8f24ecd4f781ba31bda3462feaa0803e09e7854559f7c3dd99d0e2de#npm:4.3.3", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-a92a8dd0ad/0/cache/debug-npm-4.3.3-710fd4cc7f-14472d56fe.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:381f955dfa69a9cf22f11da2f0adee704da8cfecfc37029793b9662f9ab1df7f010b776b8f24ecd4f781ba31bda3462feaa0803e09e7854559f7c3dd99d0e2de#npm:4.3.3"],
+            ["@types/supports-color", null],
+            ["ms", "npm:2.1.2"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "@types/supports-color",
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:4.3.2", {
           "packageLocation": "./.yarn/__virtual__/debug-virtual-f787eb9ef1/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
           "packageDependencies": [
@@ -3114,17 +3135,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/depd-npm-1.1.2-b0c8414da7-6b406620d2.zip/node_modules/depd/",
           "packageDependencies": [
             ["depd", "npm:1.1.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["deprecated-obj", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/deprecated-obj-npm-2.0.0-a2d0810be4-9ecb158b67.zip/node_modules/deprecated-obj/",
-          "packageDependencies": [
-            ["deprecated-obj", "npm:2.0.0"],
-            ["flat", "npm:5.0.2"],
-            ["lodash", "npm:4.17.21"]
           ],
           "linkType": "HARD",
         }]
@@ -5859,7 +5869,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["release-it", "npm:14.11.8"],
+            ["release-it", "npm:14.12.4"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["sinon", "npm:12.0.1"],
@@ -6869,17 +6879,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["release-it", [
-        ["npm:14.11.8", {
-          "packageLocation": "./.yarn/cache/release-it-npm-14.11.8-fce1cbabfd-738f2a3cf5.zip/node_modules/release-it/",
+        ["npm:14.12.4", {
+          "packageLocation": "./.yarn/cache/release-it-npm-14.12.4-381f955dfa-79b91a6059.zip/node_modules/release-it/",
           "packageDependencies": [
-            ["release-it", "npm:14.11.8"],
+            ["release-it", "npm:14.12.4"],
             ["@iarna/toml", "npm:2.2.5"],
             ["@octokit/rest", "npm:18.12.0"],
             ["async-retry", "npm:1.3.3"],
             ["chalk", "npm:4.1.2"],
             ["cosmiconfig", "npm:7.0.1"],
-            ["debug", "virtual:bd5ac53f2a4d13161e4becd2185852df3b4231ea7460becce6b80faf113589c84e6d5a7592f2b45846dcda321b203d871f080c12cd9638e02938ccdf6bfbd6ee#npm:4.3.2"],
-            ["deprecated-obj", "npm:2.0.0"],
+            ["debug", "virtual:381f955dfa69a9cf22f11da2f0adee704da8cfecfc37029793b9662f9ab1df7f010b776b8f24ecd4f781ba31bda3462feaa0803e09e7854559f7c3dd99d0e2de#npm:4.3.3"],
             ["execa", "npm:5.1.1"],
             ["form-data", "npm:4.0.0"],
             ["git-url-parse", "npm:11.6.0"],
@@ -6896,7 +6905,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["os-name", "npm:4.0.1"],
             ["parse-json", "npm:5.2.0"],
             ["semver", "npm:7.3.5"],
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
             ["update-notifier", "npm:5.1.0"],
             ["url-join", "npm:4.0.1"],
             ["uuid", "npm:8.3.2"],
@@ -7179,10 +7188,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["shelljs", [
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.4-e2890f4ce2-27f83206ef.zip/node_modules/shelljs/",
+        ["npm:0.8.5", {
+          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.5-44be43f84a-7babc46f73.zip/node_modules/shelljs/",
           "packageDependencies": [
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
             ["glob", "npm:7.2.0"],
             ["interpret", "npm:1.4.0"],
             ["rechoir", "npm:0.6.2"]
