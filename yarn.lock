@@ -1055,10 +1055,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.18.0":
-  version: 14.18.0
-  resolution: "@types/node@npm:14.18.0"
-  checksum: b120c26fe5f30bc358e861db8d7e401e419d14bd9dd25c022f3c2ea8b0b429d4c9efd77ad5d6d2a8bde61702a6786fb74d409f1b2cbb61c79133e2a65aab4fb1
+"@types/node@npm:14.18.10":
+  version: 14.18.10
+  resolution: "@types/node@npm:14.18.10"
+  checksum: e722eec37be85dd7dddc4cfd26c501c66f1f2a7e0f603f57ff925348e65a5db603b06363fa27489cbecff44f0ae59812f22509923c4c45ffa5958604cc002401
   languageName: node
   linkType: hard
 
@@ -4913,7 +4913,7 @@ fsevents@~2.3.2:
     "@types/chai-as-promised": 7.1.4
     "@types/glob": 7.2.0
     "@types/mocha": 9.0.0
-    "@types/node": 14.18.0
+    "@types/node": 14.18.10
     "@types/sinon": 10.0.6
     "@types/sinon-chai": 3.2.6
     "@typescript-eslint/eslint-plugin": 5.6.0
